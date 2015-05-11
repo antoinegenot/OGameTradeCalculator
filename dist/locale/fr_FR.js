@@ -13,7 +13,7 @@
 	SELL    : "Je vends",
 	// Ratio
 	RATIO   : "Ratio",
-	ILLEGAL : "illegal",
+	ILLEGAL : "illégal",
 	MAX     : "Maximum",
 	REG     : "Habituel",
 	MIN     : "Minimum",
@@ -38,10 +38,10 @@
 	// Config » Ratio list
 	RAT_LST : "Liste des ratios",
 	NAME    : "Nom",
-	LEGAL   : "Legal",
+	LEGAL   : "Légal",
 	YES     : "Oui",
 	NO      : "Non",
-	DEFAULT : "Defaut",
+	DEFAULT : "Défaut",
 	NEW     : "Nouveau",
 	// Config » Default values
 	DEF_VAL : "Valeurs par défaut",
@@ -49,13 +49,13 @@
 	ABB_KEY : "Abbréviations et raccourcis",
 	USE_ABB : "Utiliser les abbréviations quand c'est possible",
 	UNABB   : "Ne pas afficher d'abbréviation lorsque la souris est au dessus du champ",
-	ABB_MIL : "Abbreviation pour millions",
-	ABB_THO : "Abbreviation pour thousands",
+	ABB_MIL : "Abbréviation pour millions",
+	ABB_THO : "Abbréviation pour milliers",
 	KEY_MIL : "Raccourcis pour écrire millions (6 zéros)",
 	KEY_THO : "Raccourcis pour écrire milliers (3 zéros)",
 	// Config » Message tpl
 	MES_TPL : "Format du message",
-	RES_DTP : "Restorer le format par defaut",
+	RES_DTP : "Restaurer le format par défaut",
 	// Config » Import / Export
 	IE_CONF : "Configuration des Imports / Exports",
 	IMPORT  : "Import",
@@ -63,7 +63,7 @@
 	// Config » Buttons
 	ACCEPT  : "Accepter",
 	CANCEL  : "Annuler",
-	RES_DEF : "Restorer les options par defaut",
+	RES_DEF : "Restaurer les options par défaut",
 	// Config » Contact
 	CONTACT : "Contact"
 }
