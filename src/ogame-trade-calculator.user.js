@@ -5,8 +5,9 @@
 // @downloadURL  https://github.com/EliasGrande/OGameTradeCalculator/raw/master/dist/releases/latest.user.js
 // @updateURL    https://github.com/EliasGrande/OGameTradeCalculator/raw/master/dist/releases/latest.meta.js
 // @icon         https://github.com/EliasGrande/OGameTradeCalculator/raw/master/dist/img/icon.png
-// @version      3.0.0
+// @version      3.0.1
 // @include      *://*.ogame.*/game/index.php?*page=*
+// @include      *://*.ogame.gameforge.*/game/index.php?*page=*
 // ==/UserScript==
 /*! OGame Trade Calculator (C) 2014 Elías Grande Cásedas | MIT | opensource.org/licenses/MIT */
 (function(){
@@ -22,7 +23,7 @@ var IDP, SCRIPT, parseVersion, v1_less_than_v2;
 
 SCRIPT =
 {
-	VERSION   : [3,0,0],
+	VERSION   : [3,0,1],
 	ID_PREFIX : (IDP='o_trade_calc_'),
 	NAME      : 'OGame Trade Calculator',
 	HOME_URL  : 'https://github.com/EliasGrande/OGameTradeCalculator/',
