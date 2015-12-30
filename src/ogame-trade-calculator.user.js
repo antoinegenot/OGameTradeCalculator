@@ -9,7 +9,7 @@
 // @include      *://*.ogame.*/game/index.php?*page=*
 // @include      *://*.ogame.gameforge.*/game/index.php?*page=*
 // ==/UserScript==
-/*! OGame Trade Calculator (C) 2014 Elías Grande Cásedas | MIT | opensource.org/licenses/MIT */
+/*! OGame Trade Calculator (C) 2015 Elías Grande Cásedas | MIT | opensource.org/licenses/MIT */
 (function(){
 ////////////
 
@@ -27,7 +27,7 @@ SCRIPT =
 	ID_PREFIX : (IDP='o_trade_calc_'),
 	NAME      : 'OGame Trade Calculator',
 	HOME_URL  : 'https://github.com/EliasGrande/OGameTradeCalculator/',
-	TESTED_OGAME_VERSION : '5.7.9'
+	TESTED_OGAME_VERSION : '6.0.0'
 }
 
 parseVersion = function (version)
@@ -144,10 +144,9 @@ var onDOMContentLoaded = function()
 //                                //
 ////////////////////////////////////
 
-$.getScript('/cdn/js/greasemonkey/version-check.js', function() {
-	win.oGameVersionCheck(
-		SCRIPT.NAME, SCRIPT.TESTED_OGAME_VERSION, SCRIPT.HOME_URL);
-});
+/*$.getScript('/cdn/js/greasemonkey/version-check.js', function() {
+	win.oGameVersionCheck(SCRIPT.NAME, SCRIPT.TESTED_OGAME_VERSION, SCRIPT.HOME_URL);
+});*/
 
 /*! jCaret (C) 2010 C. F. Wong | cloudgen.w0ng.hk | www.opensource.org/licenses/mit-license.php */
 (function($,len,createRange,duplicate){
