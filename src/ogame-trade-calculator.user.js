@@ -9,7 +9,7 @@
 // @include      *://*.ogame.*/game/index.php?*page=*
 // @include      *://*.ogame.gameforge.*/game/index.php?*page=*
 // ==/UserScript==
-/*! OGame Trade Calculator (C) 2015 Elías Grande Cásedas | MIT | opensource.org/licenses/MIT */
+/*! OGame Trade Calculator (C) 2016 Elías Grande Cásedas | MIT | opensource.org/licenses/MIT */
 (function(){
 ////////////
 
