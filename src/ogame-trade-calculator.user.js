@@ -5,7 +5,7 @@
 // @downloadURL  https://github.com/EliasGrande/OGameTradeCalculator/raw/master/dist/releases/latest.user.js
 // @updateURL    https://github.com/EliasGrande/OGameTradeCalculator/raw/master/dist/releases/latest.meta.js
 // @icon         https://github.com/EliasGrande/OGameTradeCalculator/raw/master/dist/img/icon.png
-// @version      3.0.2
+// @version      3.0.3
 // @include      *://*.ogame.*/game/index.php?*page=*
 // @include      *://*.ogame.gameforge.*/game/index.php?*page=*
 // ==/UserScript==
@@ -27,7 +27,7 @@ SCRIPT =
 	ID_PREFIX : (IDP='o_trade_calc_'),
 	NAME      : 'OGame Trade Calculator',
 	HOME_URL  : 'https://github.com/EliasGrande/OGameTradeCalculator/',
-	TESTED_OGAME_VERSION : '6.0.0'
+	TESTED_OGAME_VERSION : '6.4.2'
 }
 
 parseVersion = function (version)
@@ -3132,7 +3132,6 @@ var iface =
 		_this.menuButtonAction = function(){_this.toggle();}
 		
 		// config
-		
 		_this.makeImportExport(); // << first because the dropdown uses it
 		configDropdownList.init(_this.findIDP('config'),_this);
 		ratioList.init(_this.findIDP('ratioList'),this);
@@ -3143,10 +3142,41 @@ var iface =
 			).makeMessageTpl(
 			).makeConfigButtons(
 			).updateConfigIface();
-		
+	
 		// ogame dropdowns
-		
 		_this.ogameDropDowns();
+		
+		// FIX AGO intercepting keys
+		try {
+			var selector = '#' + _this.window[0].id;
+			function isPrintable(e) {
+				var keycode = e.keyCode || 0;
+				var valid = 
+					(keycode > 47 && keycode < 58)   || // number keys
+					(keycode == 32)                  || // spacebar
+					(keycode > 64 && keycode < 91)   || // letter keys
+					(keycode > 95 && keycode < 112)  || // numpad keys
+					(keycode > 185 && keycode < 193) || // ;=,-./` (in order)
+					(keycode > 218 && keycode < 223);   // [\]' (in order)
+				return valid;
+			}
+			function keydown(e) {
+				e = e ? e : win.event;
+				var $target = $(e.target);
+				if (e.defaultPrevented && isPrintable(e) && $target.closest(selector).length > 0) {
+					var caret = $target.caret(), val = $target.val();
+					$target
+						.val(val.slice(0, caret.start) + e.key + val.slice(caret.end))
+						.caret(caret.start + 1)
+						.triggerHandler('keydown');
+					e.stopImmediatePropagation();
+				}
+			}
+			window.addEventListener('keydown', keydown, true);
+		}
+		catch (e) {
+			setTimeout(function(){ throw e; }, 0);
+		}
 		
 		return _this;
 	},
