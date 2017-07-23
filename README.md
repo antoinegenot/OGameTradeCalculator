@@ -109,7 +109,7 @@ Script information for OGame forums
 [*]Download : [url]https://github.com/EliasGrande/OGameTradeCalculator/raw/master/dist/releases/latest.user.js[/url]
 [*]Screenshot : [url]https://github.com/EliasGrande/OGameTradeCalculator/raw/master/dist/img/readme/calc.png[/url]
 [*]Browser : Firefox + Greasemonkey or Scriptish & Chrome + Tampermonkey
-[*]Languages :  English, Español, Française, Italiano & Nederlands
+[*]Languages :  English, Deutsch, Español, Française, Italiano & Nederlands
 [/list]
 ```
 
