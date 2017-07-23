@@ -4,7 +4,7 @@ OGameTradeCalculator
 
 This script adds a trade calculator to the [OGame] interface. Allows you to save your favorite ratios, use percentages, export the results as an awesome ogame message, etc.
 
-The available interface languages are **English** (*default language*), **Español** (*ogame.com.es, ogame.com.ar, mx.ogame.org*), **Française** (*ogame.fr*), **Italiano** (*ogame.it*) and **Nederlands** (*ogame.nl*) but you can send me more [translations] if you want, preferably through the [issues] of this project.
+The available interface languages are **English** (*default language*), **Deutsch** (*de.ogame.gameforge.com*), **Español** (*es.ogame.gameforge.com, ar.ogame.gameforge.com, mx.ogame.gameforge.com*), **Française** (*fr.ogame.gameforge.com*), **Italiano** (*it.ogame.gameforge.com*) and **Nederlands** (*nl.ogame.gameforge.com*) but you can send me more [translations] if you want, preferably through the [issues] of this project.
 
 \[ ![es-flag] Spanish \] *Para consultar este documento en español pulse este enlace: [README.es\_ES.md]*
 
@@ -133,7 +133,4 @@ Script information for OGame forums
 [screenshot-default_values]:dist/img/readme/def-values.png?raw=true
 [screenshot-abbreviations]:dist/img/readme/abb-auto.png?raw=true
 [screenshot-message_template]:dist/img/readme/msg-tpl.png?raw=true
-
-[es-flag]:https://dl.dropboxusercontent.com/u/89283239/icons/famfamfam.com/flag_icons/png/es.png
-
-
+[es-flag]:dist/img/icons/es-flag.gif?raw=true

@@ -4,7 +4,7 @@ OGameTradeCalculator
 
 Este script añade una calculadora de comercio a la interfaz de [OGame]. Permite guardar tus ratios favoritos, usar porcentajes, exportar los resultados en un precioso mensaje, etc.
 
-Las traducciones disponibles son **English** (*por defecto*), **Español** (*ogame.com.es, ogame.com.ar, mx.ogame.org*), **Française** (*ogame.fr*), **Italiano** (*ogame.it*) y **Nederlands** (*ogame.nl*) pero puedes enviarme mas [traducciones] si lo deseas, preferiblemente mediante los [asuntos] de este proyecto.
+Las traducciones disponibles son **English** (*por defecto*), **Deutsch** (*de.ogame.gameforge.com*), **Español** (*es.ogame.gameforge.com, ar.ogame.gameforge.com, mx.ogame.gameforge.com*), **Française** (*fr.ogame.gameforge.com*), **Italiano** (*it.ogame.gameforge.com*) y **Nederlands** (*nl.ogame.gameforge.com*) pero puedes enviarme mas [traducciones] si lo deseas, preferiblemente mediante los [asuntos] de este proyecto.
 
 \[ ![gb-flag] English \] *Click the following link to view this document in English: [README.md]*
 
@@ -133,7 +133,4 @@ Información del script para foros de OGame
 [screenshot-default_values]:dist/img/readme/def-values.png?raw=true
 [screenshot-abbreviations]:dist/img/readme/abb-auto.png?raw=true
 [screenshot-message_template]:dist/img/readme/msg-tpl.png?raw=true
-
-[gb-flag]:https://dl.dropboxusercontent.com/u/89283239/icons/famfamfam.com/flag_icons/png/gb.png
-
-
+[gb-flag]:dist/img/icons/gb-flag.gif?raw=true
